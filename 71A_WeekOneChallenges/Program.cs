@@ -18,32 +18,35 @@ namespace _71A_WeekOneChallenges
 
             Console.WriteLine($"{firstName} {lastName} is {age} years old.\n\n");
 
-
             //Challenge Two           0                      1                      2              3
             Console.WriteLine("Challenge Two: Favorite Books\n\n");
             string[] favBooks = { "Ready Player One", "Blood Sweat and Pixels", "Eldest", "Console Wars" };
 
-            foreach (var item in favBooks)
+            foreach (string item in favBooks)
             {
                 Console.WriteLine(item + "\n");
+
             }
+            Console.WriteLine(favBooks[0]);
 
 
             //Challenge Three
             Console.WriteLine("Challenge Three: Dates in list\n");
-            var list = new List<DateTime>();
+            List<DateTime> list = new List<DateTime>();
             list.Add(DateTime.Now);
             list.Add(new DateTime(1980, 5, 5));
             list.Add(new DateTime(1982, 10, 20));
             list.Add(new DateTime(1984, 1, 4));
             list.Add(new DateTime(1979, 6, 19));
-       
 
+            Console.WriteLine(list);
             foreach (var item in list)
             {
                 Console.WriteLine(item + "\n");
             }
 
+            var number = 2;
+            var numberTwo = 2.542d;
 
             //Challenge Four
             Console.WriteLine("Challenge Four: Age operation 7\n\n");
@@ -97,23 +100,23 @@ namespace _71A_WeekOneChallenges
                     "2. Good \n" +
                     "3. Okay \n" +
                     "4. Bad");
-                string answer = Console.ReadLine().ToUpper();
+                string answer = Console.ReadLine().ToLower();
                 switch (answer)
                 {
                     case "1":
-                    case "Great":
+                    case "great":
                         Console.WriteLine("What, you think you're better than me?");
                         break;
                     case "2":
-                    case "Good":
+                    case "good":
                         Console.WriteLine("Good? What do you mean by good? Talk to me!");
                         break;
                     case "3":
-                    case "Okay":
+                    case "okay":
                         Console.WriteLine("Woah, jeez. Didn't know you were so angry.");
                         break;
                     case "4":
-                    case "Bad":
+                    case "bad":
                         Console.WriteLine("Have you ever heard of the Tragedy of Darth Plagueis the Wise?");
                         string answerTwo = Console.ReadLine().ToLower();
                         if (answerTwo == "yes")

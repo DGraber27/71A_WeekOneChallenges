@@ -37,7 +37,7 @@ namespace _71A_WeekOneChallenges
             list.Add(new DateTime(1982, 10, 20));
             list.Add(new DateTime(1984, 1, 4));
             list.Add(new DateTime(1979, 6, 19));
-            //List<DateTime[]> list = new List<DateTime[]>() { new[] { DateTime.Now, DateTime.Now }, new[] { DateTime.Today, DateTime.UtcNow } };
+       
 
             foreach (var item in list)
             {

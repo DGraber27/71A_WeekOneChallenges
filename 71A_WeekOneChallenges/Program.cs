@@ -32,6 +32,7 @@ namespace _71A_WeekOneChallenges
             //Challenge Three
             Console.WriteLine("Challenge Three: Dates in list\n");
             var list = new List<DateTime>();
+            list.Add(DateTime.Now);
             list.Add(new DateTime(1980, 5, 5));
             list.Add(new DateTime(1982, 10, 20));
             list.Add(new DateTime(1984, 1, 4));
